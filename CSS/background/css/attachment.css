@@ -1,0 +1,15 @@
+#attachment{
+  font-size: 100pt;
+  background-image: url(../image/e0078752_4c7c1134f0cc2.jpg);
+  position: relative;
+  left: 30px;
+  top: 30px;
+  width: 740px;
+  height: 592px;
+  border: 1px solid black;
+  /*background-attachment: local;*/
+  overflow-y: scroll;
+/*배경을 가운데 높고 고정하고 싶을 경우*/
+  background-position: center center;
+  background-attachment:scroll;
+}

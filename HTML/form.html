@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+<h3>form</h3>
+<form action="">
+  <label for=""></label>
+  <input type="text" name="" value="">
+</form>
+
+
+  <h3>input의 type들</h3>
+  <form action="" method="get">
+    <label for="username">ID</label>
+    <input type="text" name="username"><br>
+    <input type="password" name="password"><br>
+    <input type="radio" name="radio"><br>
+    <input type="checkbox" name="checkbox"><br>
+    <input type="button"><br>
+    <input type="file" name="file"><br>
+    <input type="submit"><br>
+    <input type="reset"><br>
+    <input type="hidden" name="hidden-key" value="hidden-value"><br>
+  </form>
+
+  <h3>input의 속성들</h3>
+  <form action="">
+    <input type="text"  value="disabled" disabled="">
+    <input type="text" value="readonly" readonly="">
+    <input type="text" required="">
+    <input type="text" placeholder="공백은 안됩니다" readonly="">
+    <input type="text" size="3">
+    <input type="text" maxlength="10">
+    <input type="checkbox" checked="checked">
+    <input id="radio1"  type="radio" name="agree" checked="checked">
+    <input id="radio2" type="radio" name="agree" >
+  </form>
+
+<h3>label</h3>
+
+<!-- label안쪽에 쓰는 방식 -->
+<label >ID<input type="text"></label>
+
+<!-- label과 input을 따로 쓰고 for에 id값을 맞추주는 방식 -->
+<label for="username">ID</label>
+<input type="text" id="username">
+
+<!-- 맞춰주지 않는 경우 -->
+<label >ID</label>
+<input type="text" >
+
+<hr>
+
+<label >Check<input type="checkbox"></label>
+
+<label for="cb1">check</label>
+<input type="checkbox" id="cb1">
+
+<label >check</label>
+<input type="checkbox" >
+
+<h3>select</h3>
+<!-- 사용자에게는 텍스트가 보이지만 전송할때는 value값을 전송한다 -->
+<select name="number" id="select-id">
+  <option value="1">first</option>
+  <option value="2">second</option>
+  <option value="3">third</option>
+  <option value="4">fourth</option>
+</select>
+
+<select multiple="multiple">
+  <option value="apple">사과</option>
+  <option value="banana">바나나</option>
+  <option value="orange">오렌지</option>
+</select>
+
+
+<select >
+  <optgroup label="Fruits">
+    <option value="apple">사과</option>
+    <option value="banana">바나나</option>
+    <option value="orange">오렌지</option>
+  </optgroup>
+  <optgroup label="Colors">
+    <option value="red">레드</option>
+    <option value="blue">블루</option>
+    <option value="green">그린</option>
+  </optgroup>
+</select>
+<hr>
+
+<h3>button</h3>
+<button type="submit">서브밋</button>
+<button type="reset">리셋</button>
+<button type="button">버튼</button>
+
+<hr>
+<h3>fieldset과 legend</h3>
+<fieldset>
+  <legend>Login</legend>
+  <label for="">username:<input type="text"></label>
+  <label for="">password:<input type="password"></label>
+  <button type="submit" name="button">Login</button>
+</fieldset>
+
+<hr>
+<h3>클래스와 id속성</h3>
+
+</body>
+</html>

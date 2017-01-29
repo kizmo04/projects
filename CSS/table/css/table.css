@@ -1,0 +1,15 @@
+table {
+  margin-bottom: 20px;
+}
+
+#table1{
+  border-spacing: 0;
+}
+
+#table2{
+  border-collapse: collapse;
+}
+
+tr, td{
+  border: 1px solid black;
+}

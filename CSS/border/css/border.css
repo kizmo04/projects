@@ -1,0 +1,19 @@
+#border-width{
+  border-color: black;
+  border-style: solid;
+  border-width: 3px 6px 9px 12px;
+
+  border-top-width: 20px;
+}
+
+#border-style{
+  border-width: 10px;
+  border-color: red;
+  border-style: dashed;
+  border-style: groove;
+  border-style: outset;
+}
+
+#border{
+  border-top: 1px dashed red;
+}

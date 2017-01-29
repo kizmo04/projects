@@ -1,0 +1,199 @@
+@charset "UTF-8";
+#top-header {
+  height: 61px;
+  line-height: 61px;
+  padding: 0 10px;
+}
+
+#top-header ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#top-header ul > li {
+  float: left;
+}
+
+#top-header > .header-logo {
+  float: left;
+  padding-left: 10px;
+  padding-top: 18px;
+  margin-right: 18px;
+}
+
+#top-header > nav {
+  height: 100%;
+}
+
+#top-header > nav > .nav-list {
+  height: 100%;
+}
+
+#top-header > nav > .nav-list > li > img {
+  vertical-align: middle;
+}
+
+#top-header > nav > .nav-list > .nav-pipeline {
+  color: #919191;
+  margin: 0 8px;
+}
+
+#top-header > nav > ul#top-nav-left-list {
+  float: left;
+}
+
+#top-header > nav > ul#top-nav-right-list {
+  float: right;
+}
+
+#top-header > nav > ul#top-nav-right-list > li {
+  margin-left: 17px;
+  margin-right: 17px;
+  padding: 3px;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: 14px;
+}
+
+#top-header > nav > ul#top-nav-right-list > li.mgl-30 {
+  margin-left: 61px;
+}
+
+#top-header > nav > ul#top-nav-right-list > li.item-small {
+  font-size: 12px;
+}
+
+#top-header > nav > ul#top-nav-right-list > li > a {
+  color: #585858;
+  text-decoration: none;
+  display: inline-block;
+  height: 100%;
+}
+
+#top-header > nav > ul#top-nav-right-list > li > a:hover {
+  color: #58b5d3;
+}
+
+#wrap > #index-search {
+  height: 678px;
+  position: relative;
+  background-image: url(../images/MainSearch-bg.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-color: #dbecf6;
+}
+
+#wrap > #index-search > #index-search-image {
+  background-image: url(../images/MainSearch-img.png);
+  background-position: center top;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+#wrap > #index-search > #index-search-bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 110px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+#wrap > #index-search > #index-search-bottom > #index-search-form {
+  width: 534px;
+  height: 50px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+#wrap > #index-search > #index-search-bottom > #index-search-form > input, #wrap > #index-search > #index-search-bottom > #index-search-form > button {
+  float: left;
+}
+
+#wrap > #index-search > #index-search-bottom > #index-search-form > input {
+  width: 434px;
+  height: 50px;
+  padding: 0 20px;
+  border: none;
+  font-size: 14px;
+  line-height: 50;
+  box-sizing: border-box;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+#wrap > #index-search > #index-search-bottom > #index-search-form > button {
+  width: 100px;
+  height: 50px;
+  border: 0;
+  font-size: 15px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: #3b8de0;
+  cursor: pointer;
+  color: white;
+  transition: all 0.1s;
+}
+
+#wrap > #index-search > #index-search-bottom > #index-search-form > button:hover {
+  background-color: #2074c8;
+}
+
+#wrap > #theme-search {
+  width: 960px;
+  padding-bottom: 150px;
+  margin: 0 auto;
+}
+
+#wrap > #theme-search > .text-center {
+
+}
+
+#wrap > #theme-search > .item-box {
+
+}
+
+#wrap > #theme-search > .item-box > ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+#wrap > #theme-search > .item-box > ul > li {
+  float: left;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  background-image: url(../images/pet.jpg);
+  margin: 10px;
+}
+
+#wrap > #theme-search > .item-box > ul > li > a {
+  cursor: pointer;
+  display: inline-block;
+  width: 100%;
+  height: 100%; 
+}
+
+#wrap > #theme-search > .item-box > ul > li > a > span {
+  display: block;
+  font-size: 24px;
+  color: white;
+  position: absolute;
+
+}
+
+/*이렇게 작업하면 이미지가 너무 커서 화면이 줄어들었을때 가운데 배치하기 어렵다*/
+/*#wrap > #index-search2 {
+position: relative;
+}
+
+#wrap > #index-search2 > #img-bg {
+position: absolute;
+top: 0;
+}
+
+#wrap > #index-search2 > #img-hr {
+position: absolute;
+top: 0;
+}*/
