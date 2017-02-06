@@ -1,5 +1,6 @@
 import math
 import re
+import os
 from .communication import get_soup_from_url
 
 def get_soup_from_naver_webtoon_by_page(webtoon_id, page=1):
@@ -91,6 +92,9 @@ def get_episode_list_from_page(webtoon_id, page=1):
         rating = td_rating.get_text(strip=True)
         link = td_title.find('a').get('href')
 
+        #파일경로에서 파일이름과 홛장자를 구분함
+        _, ext = os.path.splitext(url_img_thumbnail)
+
         p = re.compile(r'.*[?&]no=(\d+).*')
         m = re.match(p, link)
         no = m.group(1)
@@ -98,6 +102,7 @@ def get_episode_list_from_page(webtoon_id, page=1):
 
         cur_episode = {
             'url_img_thumbnail' : url_img_thumbnail,
+            'file_ext' : ext,
             'title': title,
             'no' : no,
             'link' : link,

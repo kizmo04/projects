@@ -3,7 +3,7 @@
 #     get_soup_from_url, \
 #     get_soup_from_naver_webtoon_by_page, \
 #     get_episode_list_from_page
-
+import requests
 import parser
 WEBTOON_ID = 657462
 '''
@@ -51,13 +51,26 @@ result = parser.get_episode_list_from_page(WEBTOON_ID)
 # 첫번째 tr요소는 기대하는 형태를 가지고 있지 않았음.
 # tr_list = soup.find_all('tr')[1:]
 
-
+def save_file_from_url(path, url):
+    #stream=True는 곧바로 파일을 다운로드 받지 않음을 의미
+    r = requests.get(url, stream=True)
+    # 요청이 성고적으로 완료되었을 경우 (코드200)
+    if r.status_code == 200:
+        # 인자로 주어진 path의 파일을 다운받고
+        with open(path, 'wb') as f:
+            for chunk in r.iter_content(1024):
+                f.write(chunk)
 
 with open('webt.html', 'wt') as f:
     import os
-f.write('<html><body>')
-for item in result:
-    f.write('''<div><img src="{thumbnail}"/>
+    # 썸네일 디렉토리가 존재하지 않을 경우 만들어줌
+    if not os.path.exists('thumbnails'):
+        os.makedirs('thumbnails')
+
+
+    f.write('<html><body>')
+    for item in result:
+        f.write('''<div><img src="{thumbnail}"/>
     <a href="http://comic.naver.com{href}">{title}</a>
         <span>{created}</span><span>{rating}</span>
     </div> '''.format(
